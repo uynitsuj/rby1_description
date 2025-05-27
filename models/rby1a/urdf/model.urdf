@@ -60,13 +60,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.115 0 0" rpy="0 1.5708 0"/>
             <geometry>
                 <capsule radius="0.105" length="0.230" coltype="1"/>
-                <!-- <capsule sp="0.0 0.0 0.0" ep="-0.230 0.0 0.0" radius="0.105" length="1"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_torso_1">
@@ -83,13 +82,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0.0100 0 0.2400" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.115" length="0.220" coltype="2"/>
-                <!-- <capsule sp="0.01 0.0 0.130" ep="0.01 0.0 0.350" radius="0.115"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_torso_2">
@@ -106,13 +104,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0.0250 0 0.2300" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.095" length="0.1600" coltype="4"/>
-                <!-- <capsule sp="0.025 0.0 0.15" ep="0.025 0.0 0.310" radius="0.095"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_torso_3">
@@ -145,13 +142,12 @@
         </visual>
 
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.070000 0 0.038500" rpy="0 1.5708 0"/>
             <geometry>
                 <capsule radius="0.105" length="0.2" coltype="8"/>
-                <!-- <capsule sp="0.03 0.0 0.0385" ep="-0.170 0.0 0.0385" radius="0.105"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_torso_5">
@@ -168,13 +164,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0 0.0075" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.155" length="0.1350" coltype="16"/>
-                <!-- <capsule sp="0.0 0.0 -0.06" ep="0.0 0.0 0.075" radius="0.155"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_0">
@@ -191,12 +186,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.015 0.018 -0.008" rpy="0 1.5708 0"/>
             <geometry>
                 <capsule radius="0.075" length="0.0700"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_1">
@@ -213,13 +208,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0 -0.1000" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.05" length="0.2" coltype="32"/>
-                <!-- <capsule sp="0.0 0.0 0.0" ep="0.0 0.0 -0.200" radius="0.050"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_2">
@@ -236,13 +230,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0.0260 0 -0.2760" rpy="1.5708 0 0"/>
             <geometry>
                 <capsule radius="0.05" length="0.080000" coltype="64"/>
-                <!-- <capsule sp="0.026 -0.040 -0.276" ep="0.026 0.040 -0.276" radius="0.05"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_3">
@@ -259,13 +252,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.0310 0 -0.1075" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.04" length="0.1150" coltype="128" colaffinity="30"/>
-                <!-- <capsule sp="-0.031 0.0 -0.05" ep="-0.031 0.0 -0.165" radius="0.04"/> -->
             </geometry>
-        </collision>
+        </collision> -->    
     </link>
 
     <link name="link_right_arm_4">
@@ -282,12 +274,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 -0.038 0.0175" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.035" length="0.095" coltype="256" colaffinity="30"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_5">
@@ -304,13 +296,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0 -0.1" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.075" length="0.25" coltype="512" colaffinity="31"/>
-                <!-- <capsule sp="0.0 0.0 0.002" ep="0.0 0.0 -0.050" radius="0.075"/> -->
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_right_arm_6">
@@ -342,12 +333,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.015 -0.018 -0.008" rpy="0 1.5708 0"/>
             <geometry>
                 <capsule radius="0.075" length="0.0700"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_1">
@@ -364,12 +355,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0 -0.1000" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.050" length="0.2000" colaffinity="768"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_2">
@@ -386,12 +377,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0.0260 0 -0.2760" rpy="1.5708 0 0"/>
             <geometry>
                 <capsule radius="0.05" length="0.080000" colaffinity="768"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_3">
@@ -408,12 +399,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="-0.0310 0 -0.1075" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.04" length="0.1150" colaffinity="926"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_4">
@@ -430,12 +421,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0.038000 0.017500" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.035" length="0.095000" colaffinity="1022"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_5">
@@ -452,12 +443,12 @@
             </geometry>
         </visual>
 
-        <collision>
+        <!-- <collision>
             <origin xyz="0 0 -0.1" rpy="0 0 0"/>
             <geometry>
                 <capsule radius="0.075" length="0.25" colaffinity="1023"/>
             </geometry>
-        </collision>
+        </collision> -->
     </link>
 
     <link name="link_left_arm_6">
