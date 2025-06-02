@@ -3,8 +3,8 @@
   <size nuserdata="144" />
 
   <default>
-    <motor ctrlrange="-3000000 3000000" ctrllimited="true" />
-
+    <!-- <position ctrlrange="-3000000 3000000" ctrllimited="true" /> -->
+    <position kp="500" dampratio="1" inheritrange="1"/>
     <default class="visual">
       <geom group="2" type="mesh" contype="0" conaffinity="0" />
     </default>
@@ -18,34 +18,51 @@
   
   <include file="./rby1.xml" />
 
+  <worldbody>
+  
+
+    <body name="left_ee_target" pos="0.5 0 .5" quat="0 1 0 0" mocap="true">
+      <geom type="box" size=".04 .04 .04" contype="0" conaffinity="0" rgba=".6 .3 .3 .2"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+    <body name="right_ee_target" pos="0.5 0 .5" quat="0 1 0 0" mocap="true">
+      <geom type="box" size=".04 .04 .04" contype="0" conaffinity="0" rgba=".6 .3 .3 .2"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+  </worldbody>
+
+  <keyframe>
+    <key name='teleop' qpos='0 0 0 0 0 0 0 0 0 0 0 -0.3 -0.3 -0.0 -1.57 -0.3 1.5 0 0 0 -0.3 0.3 -0.0 -1.57 0.3 1.5 0 0 0 0 0'/>
+  </keyframe>
+
   <actuator>
-    <motor name="left_wheel_act" joint="left_wheel" />
-    <motor name="right_wheel_act" joint="right_wheel" />
+    <position name="left_wheel_act" joint="left_wheel" />
+    <position name="right_wheel_act" joint="right_wheel" />
 
-    <motor name="link1_act" joint="torso_0" />
-    <motor name="link2_act" joint="torso_1" />
-    <motor name="link3_act" joint="torso_2" />
-    <motor name="link4_act" joint="torso_3" />
-    <motor name="link5_act" joint="torso_4" />
-    <motor name="link6_act" joint="torso_5" />
+    <position name="link1_act" joint="torso_0" />
+    <position name="link2_act" joint="torso_1" />
+    <position name="link3_act" joint="torso_2" />
+    <position name="link4_act" joint="torso_3" />
+    <position name="link5_act" joint="torso_4" />
+    <position name="link6_act" joint="torso_5" />
 
-    <motor name="left_arm_1_act" joint="left_arm_0" />
-    <motor name="left_arm_2_act" joint="left_arm_1" />
-    <motor name="left_arm_3_act" joint="left_arm_2" />
-    <motor name="left_arm_4_act" joint="left_arm_3" />
-    <motor name="left_arm_5_act" joint="left_arm_4" />
-    <motor name="left_arm_6_act" joint="left_arm_5" />
-    <motor name="left_arm_7_act" joint="left_arm_6" />
+    <position name="left_arm_1_act" joint="left_arm_0" />
+    <position name="left_arm_2_act" joint="left_arm_1" />
+    <position name="left_arm_3_act" joint="left_arm_2" />
+    <position name="left_arm_4_act" joint="left_arm_3" />
+    <position name="left_arm_5_act" joint="left_arm_4" />
+    <position name="left_arm_6_act" joint="left_arm_5" />
+    <position name="left_arm_7_act" joint="left_arm_6" />
 
-    <motor name="right_arm_1_act" joint="right_arm_0" />
-    <motor name="right_arm_2_act" joint="right_arm_1" />
-    <motor name="right_arm_3_act" joint="right_arm_2" />
-    <motor name="right_arm_4_act" joint="right_arm_3" />
-    <motor name="right_arm_5_act" joint="right_arm_4" />
-    <motor name="right_arm_6_act" joint="right_arm_5" />
-    <motor name="right_arm_7_act" joint="right_arm_6" />
+    <position name="right_arm_1_act" joint="right_arm_0" />
+    <position name="right_arm_2_act" joint="right_arm_1" />
+    <position name="right_arm_3_act" joint="right_arm_2" />
+    <position name="right_arm_4_act" joint="right_arm_3" />
+    <position name="right_arm_5_act" joint="right_arm_4" />
+    <position name="right_arm_6_act" joint="right_arm_5" />
+    <position name="right_arm_7_act" joint="right_arm_6" />
 
-    <motor name="head_0_act" joint="head_0" />
-    <motor name="head_1_act" joint="head_1" />
+    <position name="head_0_act" joint="head_0" />
+    <position name="head_1_act" joint="head_1" />
   </actuator>
 </mujoco>

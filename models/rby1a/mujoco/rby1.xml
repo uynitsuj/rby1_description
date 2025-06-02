@@ -56,9 +56,26 @@
       solimp="0.95 0.99 0.001 0.5 2" friction="0.05 0.001 0.05" />
     <light directional="true" diffuse=".8 .8 .8" specular="0 0 0" pos="0 0 5" dir="0 0 -1" castshadow="false" />
 
+    <body name="com_target" pos="0.5 0 .5" mocap="true">
+      <geom type="sphere" size=".08" contype="0" conaffinity="0" rgba=".6 .3 .3 .2"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+    <body name="link_left_arm_6_target" pos="0.5 0 .5" quat="0 1 0 0" mocap="true">
+      <geom type="sphere" size=".04" contype="0" conaffinity="0" rgba=".6 .3 .3 .2"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+    <body name="link_right_arm_6_target" pos="0.5 0 .5" quat="0 1 0 0" mocap="true">
+      <geom type="sphere" size=".04" contype="0" conaffinity="0" rgba=".6 .3 .3 .2"/>
+      <site type="sphere" size="0.01" rgba="0 0 1 1" group="1"/>
+    </body>
+
     <body name="base">
       <inertial pos="-0.0615794 -0.00142271 0.135139" quat="0.00383057 0.733861 -0.00742942 0.679248" mass="60.0804" diaginertia="3.77525 2.99424 1.36264" />
-      <joint name="world_j" type="free" limited="false" actuatorfrclimited="false" />
+      
+      <joint name="joint_x" type="slide" axis="1 0 0"/>
+      <joint name="joint_y" type="slide" axis="0 1 0"/>
+      <joint name="joint_th"/>
+      <!-- <joint name="world_j" type="free" limited="false" actuatorfrclimited="false" /> -->
       <include file="./assets/base/geoms.xml" />
 
       <body name="wheel_r" pos="0.228 -0.265 0.1">
@@ -142,6 +159,7 @@
                                 <body name="EE_BODY_R" pos="0 0 -0.1548">
                                   <inertial pos="0 0 0" mass="0" />
                                   <include file="./assets/EE_BODY/geoms.xml" />
+                                  <site name="right_ee" pos="0.0 0 -0.1" size="0.02"/>
                                 </body>
                                 <body name="ee_finger_r1" pos="0.003 0 -0.2278">
                                   <inertial pos="0.00278346 -3.29e-06 -0.0257011" quat="0.999784 0 0.0208044 0" mass="0.03327" diaginertia="1.23275e-05 1.066e-05 2.22251e-06" />
@@ -201,6 +219,7 @@
                                 <body name="EE_BODY_L" pos="0 0 -0.1548">
                                   <inertial pos="0 0 0" mass="0" />
                                   <include file="./assets/EE_BODY/geoms.xml" />
+                                  <site name="left_ee" pos="0.0 0 -0.1" size="0.02"/>
                                 </body>
                                 <body name="ee_finger_l1" pos="-0.003 0 -0.2278" quat="4.48966e-11 0 0 1">
                                   <inertial pos="0.00278346 -3.29e-06 -0.0257011" quat="0.999784 0 0.0208044 0" mass="0.03327" diaginertia="1.23275e-05 1.066e-05 2.22251e-06" />
@@ -242,4 +261,7 @@
     <joint name="right_finger" joint1="gripper_finger_r1" joint2="gripper_finger_r2" polycoef="0 -1 0 0 0" />
     <joint name="left_finger" joint1="gripper_finger_l1" joint2="gripper_finger_l2" polycoef="0 -1 0 0 0" />
   </equality>
+  <keyframe>
+    <key name="stand" qpos="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+  </keyframe>
 </mujoco>
